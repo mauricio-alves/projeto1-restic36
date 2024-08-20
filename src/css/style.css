@@ -83,7 +83,7 @@ main form button:hover {
   background-color: #379647;
 }
 
-#result {
+#cards {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 1rem 2rem;
@@ -93,6 +93,69 @@ main form button:hover {
 
 .card {
   background-color: #f4f4f4;
+  border-radius: 10px;
+}
+
+.image {
+  padding: 0;
+}
+
+.text {
+  padding: 10px;
+  text-align: center;
+}
+
+.error-msg,
+.error-img {
+  padding: 0;
+}
+
+.error-img img {
+  width: 250px;
+}
+
+.error-text {
+  font-size: 1rem;
+  color: #02b0c8;
+  background-color: #f4f4f4;
+  border-radius: 10px;
+  padding: 5px;
+  margin-top: 15px;
+}
+
+#pagination {
+  display: flex;
+  flex-direction: row;
+}
+
+#pagination ul {
+  display: flex;
+  gap: 0.3rem;
+  margin: 15px 0;
+}
+
+#pagination ul li {
+  list-style: none;
+  padding: 2px 4px;
+  width: 20px;
+  background-color: #80c243;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.arrow\:text {
+  display: block;
+  vertical-align: middle;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  padding: 0 5px;
+}
+
+.hide {
+  display: none;
 }
 
 /* ------------ Footer ------------ */
@@ -106,4 +169,23 @@ footer {
 footer a {
   text-decoration: none;
   font-weight: bold;
+}
+
+/* --------------  MEDIA QUERIES ----------------  */
+@media (max-width: 1330px) {
+  #cards {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 990px) {
+  #cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 675px) {
+  #cards {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }

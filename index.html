@@ -8,14 +8,14 @@
   <title>Projeto 1</title>
 
   <link rel="stylesheet" type="text/css" href="src/css/style.css" />
-  <script src="src/script/index.js" defer></script>
+  <script src="dist/index.js" defer></script>
 </head>
 
 <body class="background-image">
 
   <header>
     <div>
-      <img src="src/images/rickandmorty-logo.svg" alt="rick and morty logo" />
+      <a href="index.html"><img src="src/images/rickandmorty-logo.svg" alt="rick and morty logo" /></a>
       <h1>
         Projeto 1 - Trilha FullStack
       </h1>
@@ -29,15 +29,28 @@
       </div>
       <form id="form">
         <div>
-          <input type="text" id="search" name="search" placeholder="Digite o nome de um personagem aqui..." />
+          <input type="search" id="search" oninput="getInputValue(event)"
+            placeholder="Digite o nome de um personagem aqui..." />
         </div>
         <div>
-          <button type="submit" id="submit-btn">Pesquisar</button>
+          <button type="submit" onclick="searchByName(event)" id="submit-btn">Pesquisar</button>
         </div>
       </form>
     </div>
-    <div class="result">
+    <div>
       <div id="result"></div>
+      <div id="cards"></div>
+    </div>
+    <div id="pagination">
+      <div>
+        <span class="arrow:text" onclick="previousPage()"><</span> 
+      </div>
+      <div class="list">
+        <ul></ul>
+      </div>
+      <div>
+        <span class="arrow:text" onclick="nextPage()">></span>
+      </div>
     </div>
   </main>
   <footer>
