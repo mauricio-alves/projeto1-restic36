@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "target": "es2016",
+    "lib": ["ES2016", "DOM", "ES2015", "ES2015.Promise"],
+    "module": "commonjs",
+    "sourceMap": true,
+    "declaration": true,
+    "resolveJsonModule": true,
+    "outDir": "./dist",
+    "skipLibCheck": true,
+    "strict": true
+  }
+}

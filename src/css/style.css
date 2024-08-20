@@ -1,0 +1,109 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  line-height: 1.5;
+}
+
+body {
+  margin: 0 auto;
+}
+
+.background-image::before {
+  content: "";
+  position: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("https://s3.amazonaws.com/thumbnails.thecrimson.com/photos/2024/03/06/205137_1369293.jpg.1500x843_q95_crop-smart_upscale.jpg");
+  opacity: 0.3;
+  z-index: -1;
+}
+
+/* ------------ Header ------------ */
+header div {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #9ecb3d;
+  color: white;
+  padding: 20px 0;
+}
+
+header div img {
+  max-width: 150px;
+}
+
+header div h1 {
+  font-size: 1.5rem;
+  display: flex;
+  align-items: baseline;
+  align-self: center;
+  justify-content: center;
+  text-align: center;
+}
+
+/* ------------ Main ------------ */
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+main div {
+  color: #02b0c8;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 15px;
+}
+
+main form input {
+  padding: 3px 10px;
+  width: 400px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+}
+
+main form button {
+  margin: 10px 0;
+  padding: 5px 10px;
+  background-color: #80c243;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 10px;
+  transition: all 0.3s ease-in-out;
+}
+
+main form button:hover {
+  background-color: #379647;
+}
+
+#result {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem 2rem;
+  padding: 5px 10px;
+  border-radius: 10px;
+}
+
+.card {
+  background-color: #f4f4f4;
+}
+
+/* ------------ Footer ------------ */
+footer {
+  padding: 10px 0;
+  text-align: center;
+  background-color: #9ecb3d;
+  color: white;
+}
+
+footer a {
+  text-decoration: none;
+  font-weight: bold;
+}
