@@ -1,7 +1,7 @@
 {
   "name": "projeto1-restic36",
   "version": "1.0.0",
-  "description": "O objetivo é desenvolver uma aplicação web básica que utilize HTML, CSS e TypeScript para criar uma interface visualmente agradável com dados dinâmicos. Para este projeto optei por criar uma aplicação que exiba na tela os personagens da série \"Rick and Morty\" e que permita a possibilidade de pesquisá-los pelo nome.",
+  "description": "",
   "main": "index.js",
   "scripts": {
     "build": "tsc"
