@@ -81,7 +81,7 @@ function handlePagination(i: number): void {
 }
 
 // Função que atualiza a paginação.
-function updatePagination() {
+function updatePagination(): void {
   let startIndex: number = currentPage - 1;
   let endIndex: number = startIndex + 10;
   page.forEach((page: Element, i: number) => {
@@ -115,7 +115,7 @@ function getInputValue(event: Event): string {
   return searchTerm;
 }
 
-// Evento de input para filtrar os personagens pelo nome.
+// Evento de input para pesquisar os personagens pelo nome.
 function searchByName(event: Event | null): void {
   event?.preventDefault();
   let inputValue = document.querySelector("#search") as HTMLInputElement;
